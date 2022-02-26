@@ -28,4 +28,6 @@ include:
 # Specify how to use the template
 build_image:
   stage: build
+  variables:
+    KUBERNETES_MEMORY_LIMIT: 8Gi
   extends: .kaniko
